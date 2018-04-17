@@ -118,7 +118,7 @@
                 <img ng-src="{{d.coverimage}}">
                 <div class="dest-info">
                     <h4>{{d.name | uppercase}}</h4>
-                    <p>Prices starts from {{d.pricerange | currency}}</p>
+                    <p>Prices starts from {{d.pricerange | currency : "R"}}</p>
                     <p>This package will be available from {{d.seasondate | date}}</p>
                     <p ng-click="plusOne($index)" class="votes">VOTE: + {{d.votes}} </p>
                 </div>
